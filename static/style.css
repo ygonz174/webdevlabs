@@ -1,0 +1,45 @@
+*{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:  "wdth" 100
+    padding: 5px;
+    margin: 5px;
+}
+header{
+    color:#92ad70;
+    background:rgb(255, 255, 255);
+}
+#webname{
+    background-color: #92ad70;
+    color: #FFF;
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    color:#1b9042;
+    margin-right: 15px;
+}
+table th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #424442;
+    color:rgb(255, 255, 255);
+    width: fit-content;
+}
+table tr:nth-child(even) {
+    background-color: #b1acac47;
+}
+
+form * {
+    display: block;
+    margin: auto;
+    text-align: center;
+} 
+
+.button{
+    border-radius: 3px;
+    background: #92ad70;
+    color: #FFF;
+}
