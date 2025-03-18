@@ -9,10 +9,11 @@
     <title>Yari Gonzalez</title>
     <link rel ="stylesheet" href = "../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="../static/script.js"></script>
 </head>
-<body>
+<body onload = "addYear()">
     <header><h1 id ="webname">Yari Gonzalez</h1>
         <nav>
             <a href="../index.html">About Me</a>
@@ -23,13 +24,14 @@
     </header>
     <div class="name">
         <h2>Things I love to do for fun!</h2>
-        <ul>
+        <button id ="seeMore" onClick = "showList()">Click to see... </button>
+        <ul id = "favList">
             <li>Running</li>
             <li>Sleeping</li>
             <li>Talking with Friends</li>
             <li>Playing Puzzle Games</li>
         </ul>
     </div>
-    <footer> © 2025 designed and coded by Yari Gonzalez</footer>
+    <footer> <p id = "copyYear">Designed and coded by Yari Gonzalez</p></footer>
 </body>
 </html>

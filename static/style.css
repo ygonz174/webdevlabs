@@ -3,12 +3,13 @@
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-variation-settings:  "wdth" 100
+    font-variation-settings:  "wdth" 100;
     padding: 5px;
     margin: 5px;
 }
 header{
     color:#92ad70;
+    text-align: center;
     background:rgb(255, 255, 255);
 }
 #webname{
@@ -21,10 +22,17 @@ nav a{
     color:#1b9042;
     margin-right: 15px;
 }
+nav a:hover {
+    color: #186618;
+    font-weight: bold;
+}
+#bold {
+    font-weight: bold;
+}
 table th{
     padding-top: 12px;
     padding-bottom: 12px;
-    background-color: #424442;
+    background-color: #0a4d0a;
     color:rgb(255, 255, 255);
     width: fit-content;
 }
@@ -37,9 +45,49 @@ form * {
     margin: auto;
     text-align: center;
 } 
-
+input[type="submit"] {
+    background: #92ad70;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+input[type="submit"]:hover {
+    background: #6f8a50;
+}
 .button{
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     background: #92ad70;
     color: #FFF;
+    font-size: 16px;
+}
+.button:hover {
+    background: #6f8a50;
+}
+#longIntro {
+    display: none; /* Initially hidden */
+}
+#readMore, #readLess {
+    background-color: #194e19;
+    color: white;
+    font-size: 16px;
+    font-style: italic;
+}
+#readMore:hover, #readLess:hover {
+    background-color: #267b42;
+}
+#readLess {
+    display: none; 
+}
+#favList {
+    display: none;
+}
+#validateMsg {
+    text-align: center; 
+    font-weight: bold; 
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
 }
