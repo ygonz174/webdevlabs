@@ -6,13 +6,14 @@
     <meta name="author" content="Yari Gonzalez">
     <meta name="keywords" content="Carnegie Mellon University, Information Systems">
     <meta name="description" content="Yari Gonzalez Professional Website">
-    <title>Yari Gonzalez</title>
+    <title>Yari Gonzalez</title> 
     <link rel ="stylesheet" href = "../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="../static/script.js"></script>
 </head>
-<body>
+<body onload = "addYear()">
     <header><h1 id ="webname">Yari Gonzalez</h1>
         <nav>
             <a href="../index.html">About Me</a>
@@ -22,16 +23,25 @@
         </nav>
     </header>
     <div class="name">
-        <h2>Contact Me</h2>
-        <form id = "formstyle">
-            <label for="fname">Your name(required)</label>
-            <input type="text" name ="fname" required>
-            <label for="email">Your email</label>
-            <input type="text" name ="email" required>
-            <label for="comment">Your comment</label>
-            <textarea id = "comment" type="text" name = "comment" rows ="4" cols = "50" required></textarea>
-            <input class = "button" type="submit" value="send">
-        </form>
+        <div class = "main">
+            <h2>Find Me</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6072.561144597901!2d-79.94524062336757!3d40.4469266538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f22289fcf803%3A0xb8947151950f3e8e!2sMudge%20House!5e0!3m2!1sen!2sus!4v1742398393968!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <h2>Contact Me</h2>
+            <form id = "formstyle" onsubmit="return validate()" novalidate>
+                <label for="fname">Your name(required)</label>
+                <input type="text" name ="fname" id = "name" required>
+
+                <label for="email">Your email(required)</label>
+                <input type="email" name ="email" id ="email" required>
+
+                <label for="comment">Your message(required)</label>
+                <textarea id = "comment" type="text" name = "comment" rows ="10" cols = "30" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+            <p id = "validateMsg"></p>
+        </div>
         <table>
             <tr>
                 <th>Contact Method</th>
@@ -51,6 +61,6 @@
             </tr>
         </table>
     </div>
-    <footer> © 2025 designed and coded by Yari Gonzalez</footer>
+    <footer> <p id = "copyYear"> Designed and coded by Yari Gonzalez</p></footer>
 </body>
 </html>
